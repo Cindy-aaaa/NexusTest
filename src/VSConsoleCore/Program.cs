@@ -7,8 +7,11 @@ namespace VSOConsoleCore
 {
     class Program
     {
+        string person { set; get; }
         static void Main(string[] args)
         {
+            Program A = new Program();
+            A.person = "Lydia";//set bp
             VerifyValue();
             sum(5, 6);
             VerifyVisualize();
